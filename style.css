@@ -1,0 +1,31 @@
+:root{
+    --background-color: #222;
+    --second-background-color: #d2d2d2; 
+    --text-color: #004ca8;
+}
+body{
+    background:  var(--background-color);
+}
+h1{
+    text-align: center;
+    color: var(--second-background-color);
+}
+.container{
+    margin: 6rem auto 0;
+    display: flex;
+    gap: 2rem;
+    width: 17rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.card-slider{
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    padding: 2rem 3rem;
+    flex-shrink: 0;
+    width: 17rem;
+    border-radius: 1rem;
+    text-align: center;
+    background: var(--second-background-color);
+    color: var(--text-color);
+}
